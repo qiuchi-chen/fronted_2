@@ -7,6 +7,21 @@ import HomePage from '../views/HomePage.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: HomePage },
+  {
+    path: '/courses',
+    name: 'Courses',
+    component: () => import('../views/CoursesPage.vue')
+  },
+  {
+    path: '/learning-path',
+    name: 'LearningPath',
+    component: () => import('../views/LearningPathPage.vue')
+  },
+  {
+    path: '/community',
+    name: 'Community',
+    component: () => import('../views/CommunityPage.vue')
+  },
 //   { path: '/course/:id', name: 'CourseDetail', component: CourseDetail },
 //   { path: '/learning-path', name: 'LearningPath', component: LearningPath },
 //   { path: '/community', name: 'Community', component: Community },

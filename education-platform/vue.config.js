@@ -3,9 +3,7 @@ const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
   transpileDependencies: true,
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/education-platform/'  // 替换为你的仓库名
-    : '/',
+  publicPath: './',  // 修改为相对路径
   outputDir: 'dist',
   css: {
     loaderOptions: {
